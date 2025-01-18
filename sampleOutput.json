@@ -1,0 +1,72 @@
+
+{
+  "status": "ok",
+  "totalResults": 5,
+  "articles": [
+    {
+      "source": {
+        "id": "bbc-sport",
+        "name": "BBC Sport"
+      },
+      "author": null,
+      "title": "T20 World Cup: USA cricket team shocks Pakistan in Texas",
+      "description": "Why the USA's shock victory over Pakistan in the men's T20 World Cup could be huge for the sport stateside.",
+      "url": "http://www.bbc.co.uk/sport/cricket/articles/cy990k0lwl7o",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_sport/a56d/live/cb87b7a0-2444-11ef-a13a-0b8c563da930.jpg",
+      "publishedAt": "2024-06-06T22:52:13.0526211Z",
+      "content": "For cricket to break America, it needed something special. \r\nIt needed drama, entertainment, high-quality skill and a little bit of chaos thrown in. \r\nSo when the co-hosts of the T20 World Cup stunne… [+2323 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-sport",
+        "name": "BBC Sport"
+      },
+      "author": null,
+      "title": "USA beat Pakistan: T20 World Cup upset 'a big day for US cricket'",
+      "description": "USA cricket captain Monank Patel reacts to his side’s stunning super-over win against Pakistan in the T20 World Cup.",
+      "url": "http://www.bbc.co.uk/sport/cricket/videos/cj55e9e8j5po",
+      "urlToImage": "https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/56d5/live/d9c629f0-2449-11ef-a13a-0b8c563da930.jpg",
+      "publishedAt": "2024-06-06T21:37:17.1613022Z",
+      "content": "'Unbelievable win over Pakistan a big day for US cricket' Video, 00:00:45'Unbelievable win over Pakistan a big day for US cricket'"
+    },
+    {
+      "source": {
+        "id": "usa-today",
+        "name": "USA Today"
+      },
+      "author": "Saman Shafiq",
+      "title": "US cricket stuns Pakistan in a thrilling 'super over' match, nabs second tournament victory",
+      "description": "USA Cricket's Aaron Jones and Harmeet Singh set a target of 19 runs in the super over. However, Pakistan managed to make only 13.",
+      "url": "https://www.usatoday.com/story/sports/2024/06/06/t20-world-cup-us-pakistan-cricket/74003980007/",
+      "urlToImage": "https://www.usatoday.com/gcdn/authoring/authoring-images/2024/06/06/USAT/74004857007-2155698882.jpg?crop=5119,2881,x0,y267&width=3200&height=1801&format=pjpg&auto=webp",
+      "publishedAt": "2024-06-06T21:16:55+00:00",
+      "content": "A thrilling match, that had cricket fans at the edge of their seat, ended with the United States triumphing over Pakistan in a super over. Thursday's match was the U.S.'s second match in the tourname… [+2679 chars]"
+    },
+    {
+      "source": {
+        "id": "espn-cric-info",
+        "name": "ESPN Cric Info"
+      },
+      "author": null,
+      "title": "PCB hands Umar Akmal three-year ban from all cricket | ESPNcricinfo.com",
+      "description": "Penalty after the batsman pleaded guilty to not reporting corrupt approaches | ESPNcricinfo.com",
+      "url": "http://www.espncricinfo.com/story/_/id/29103103/pcb-hands-umar-akmal-three-year-ban-all-cricket",
+      "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1099495_800x450.jpg",
+      "publishedAt": "2020-04-27T11:41:47Z",
+      "content": "Umar Akmal's troubled cricket career has hit its biggest roadblock yet, with the PCB handing him a ban from all representative cricket for three years after he pleaded guilty of failing to report det… [+1506 chars]"
+    },
+    {
+      "source": {
+        "id": "espn-cric-info",
+        "name": "ESPN Cric Info"
+      },
+      "author": null,
+      "title": "What we learned from watching the 1992 World Cup final in full again | ESPNcricinfo.com",
+      "description": "Wides, lbw calls, swing - plenty of things were different in white-ball cricket back then | ESPNcricinfo.com",
+      "url": "http://www.espncricinfo.com/story/_/id/28970907/learned-watching-1992-world-cup-final-full-again",
+      "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1219926_1296x729.jpg",
+      "publishedAt": "2020-03-30T15:26:05Z",
+      "content": "Last week, we at ESPNcricinfo did something we have been thinking of doing for eight years now: pretend-live ball-by-ball commentary for a classic cricket match. We knew the result, yes, but we tried… [+6823 chars]"
+    }
+  ]
+}
