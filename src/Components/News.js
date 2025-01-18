@@ -10,18 +10,23 @@ const News = (props) => {
   const [page, setPage] = useState(1);
   const [totalResults, setTotalResults] = useState(0);
 
+  // Set fallback values for category and pageSize
+  const category = props.category || "general"; // Default to "general" if undefined
+  const pageSize = props.pageSize || 10; // Default to 10 if undefined
+
   useEffect(() => {
+    if (!category) return; // Prevent execution if category is not passed
     document.title = `${
-      props.category.charAt(0).toUpperCase() + props.category.slice(1)
+      category.charAt(0).toUpperCase() + category.slice(1)
     } - News`;
     fetchNews();
-  }, []);
+  }, [category]); // Depend on category to re-fetch if it changes
 
   const fetchNews = async (page = 1) => {
     props.setProgress(50);
     setLoading(true);
 
-    const url = `https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&page=${page}&pageSize=${props.pageSize}&apiKey=11e8a3b8ec29467ab70d878333d8d56b`;
+    const url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&page=${page}&pageSize=${pageSize}&apiKey=11e8a3b8ec29467ab70d878333d8d56b`;
 
     try {
       const response = await fetch(url);
@@ -44,7 +49,7 @@ const News = (props) => {
   };
 
   const fetchMoreData = async () => {
-    if (articles.length < totalResults) {
+    if (articles.length < totalResults && !loading) {
       fetchNews(page + 1);
     }
   };
@@ -53,8 +58,7 @@ const News = (props) => {
     <div className="container my-2">
       <h2 className="my-5 text-center">
         <strong>
-          Top Headlines -{" "}
-          {props.category.charAt(0).toUpperCase() + props.category.slice(1)}
+          Top Headlines - {category.charAt(0).toUpperCase() + category.slice(1)}
         </strong>
       </h2>
 
@@ -64,8 +68,9 @@ const News = (props) => {
         hasMore={articles.length < totalResults}
         loader={<Spinner />}
       >
-        {loading && <Spinner />}
-        {Array.isArray(articles) && (
+        {loading ? (
+          <Spinner />
+        ) : Array.isArray(articles) && articles.length > 0 ? (
           <div className="container">
             <div className="row">
               {articles.map((article, index) => (
@@ -80,6 +85,8 @@ const News = (props) => {
               ))}
             </div>
           </div>
+        ) : (
+          <div>No articles available.</div>
         )}
       </InfiniteScroll>
     </div>
